@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="assets/icons/logo.svg" alt="Logo Alura" />
+    </header>
+    <main class="container-main">
+      <div class="container-encrypt">
+        <p id="message-alert"></p>
+        <div class="input-group">
+          <textarea
+            id="message"
+            name="textarea"
+            rows="8"
+            placeholder="Ingresa el texto aqui"
+          ></textarea>
+          <p class="note">
+            <img src="assets/icons/mark.svg" alt="exlamacion" />
+            Solo letras minúsculas y sin acentos
+          </p>
+        </div>
+
+        <div class="button-group">
+          <button id="encrypt" class="button-encrypt">Encriptar</button>
+          <button id="decrypt" class="button-decrypt">Desencriptar</button>
+        </div>
+      </div>
+      <div class="container-result">
+        <img class="people-icon" src="assets/icons/people.svg" alt="">
+        <h1>Ningún mensaje fue encontrado</h1>
+        <p>Ingresa el texto que desees encriptar o desencriptar</p>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="app/index.js"></script>
+  </body>
+</html>
